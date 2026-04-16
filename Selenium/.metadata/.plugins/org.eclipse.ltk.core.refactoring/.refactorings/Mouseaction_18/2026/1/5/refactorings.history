@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Mouseaction_18&apos;&#x0D;&#x0A;- Original project: &apos;Mouseaction_18&apos;&#x0D;&#x0A;- Original element: &apos;Mouseaction_18/src/main/java/Html.Currentpagecontents_15&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Html.Currentpagecontents_15" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Html" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1769321110711" subPackages="false" version="1.0"/>
+</session>

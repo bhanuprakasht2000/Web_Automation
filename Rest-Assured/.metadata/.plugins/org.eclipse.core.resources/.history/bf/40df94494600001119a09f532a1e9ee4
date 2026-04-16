@@ -1,0 +1,25 @@
+package Basic.Basic_01;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import junit.framework.Assert;
+public class Rest1 {
+	@Test
+public void printAllheaders() {
+	//Way1
+	RestAssured.baseURI="https://fakestoreapi.com/products";
+	RequestSpecification reqspec=RestAssured.given();
+	Response res=reqspec.get();
+Headers headers=res.headers();
+for(Header h:headers) {
+	System.out.println(h.getName()+"--->"+h.getValue());
+}
+
+}
+}
+

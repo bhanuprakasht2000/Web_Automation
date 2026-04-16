@@ -1,0 +1,49 @@
+package Login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Lopginfunction1 {
+	@Test(priority = 1)
+	public void loginwithvalidceredentials() throws Exception {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://tutorialsninja.com/demo/");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//span[.='My Account']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Login")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("input-email")).sendKeys("bhanubpr420@gmail.com");
+		Thread.sleep(2000);
+		driver.findElement(By.id("input-password")).sendKeys("1234");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		driver.quit();
+	}
+	@Test(priority = 2)
+	public void loginwithinvalidceredentials() throws Exception {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://tutorialsninja.com/demo/");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//span[.='My Account']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Login")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("input-email")).sendKeys("braj@gmail.com");
+		Thread.sleep(2000);
+		driver.findElement(By.id("input-password")).sendKeys("1234");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[.='Warning: No match for E-Mail Address and/or Password.']")).isDisplayed());
+		driver.quit();
+	}
+}

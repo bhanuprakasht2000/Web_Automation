@@ -1,0 +1,41 @@
+package Fundhtml;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Html {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		System.err.print("Utube>>Hyr Tutorials>>Selenuium>>7");
+	WebDriver wb=new ChromeDriver();
+	wb.get("https://github.com/login");
+	Thread.sleep(3000);
+	wb.findElement(By.id("login_field"));
+	highlightElement(wb, wb.findElement(By.id("login_field")));
+	Thread.sleep(3000);
+	highlightElement(wb, wb.findElement(By.name("password")));
+	Thread.sleep(3000);
+	highlightElement(wb, wb.findElement(By.className("btn")));
+	Thread.sleep(3000);
+	highlightElement(wb, wb.findElement(By.linkText("Forgot password?")));
+	Thread.sleep(3000);
+	highlightElement(wb, wb.findElement(By.partialLinkText("Create")));
+
+
+
+
+
+
+
+	}
+	public static void highlightElement(WebDriver driver, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].style.border='3px solid red'", element);
+	}
+
+}

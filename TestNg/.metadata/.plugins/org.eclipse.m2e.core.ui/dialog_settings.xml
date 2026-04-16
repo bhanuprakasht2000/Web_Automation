@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_Annotations_09"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_Enabledisableattribute&amp;@ignoretag_13"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_basic-01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="test1.Testng_SerialandParallel_Executions_using_parallel_and_thread_countatxml_41"/>
+			<item value="test1.Testng_Groupsbyxml_15"/>
+			<item value="test1.TestNg_Restassured_04"/>
+			<item value="test1.Testng_Selenium_03"/>
+			<item value="test1.Testng_basic_02"/>
+			<item value="test1.Testng_basic_01"/>
+		</list>
+		<list key="groupId">
+			<item value="test1"/>
+		</list>
+		<list key="artifactId">
+			<item value="Testng_SerialandParallel_Executions_using_parallel_and_thread-countatxml_41"/>
+			<item value="Testng_groupsbyxml_15"/>
+			<item value="Testng_Groupsbyxml_15"/>
+			<item value="TestNg_Restassured_04"/>
+			<item value="Testng_Selenium_03"/>
+			<item value="Testng_basic_02"/>
+			<item value="Testng_basic-01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\.metadata\.plugins\org.eclipse.ltk.core.refactoring\.refactorings\Testng_@dataProvider_multriple_attribute_from_sameclass_29"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_@dataProvider_attribute_different_returntypes_32"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_@dataProviderattribute_Objectclass_31"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_@dataProvider_multiple_attribute_from_sameclass_29"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_alwaysRun_attributute_21"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_Selenium_dependsOnMethods_20"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_Groupbyattribute_16"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\TestNg\Testng_Annotations_09"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="freturntypes"/>
+			<item value="objectclass"/>
+			<item value="Na"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

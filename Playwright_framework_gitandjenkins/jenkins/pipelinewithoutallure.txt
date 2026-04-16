@@ -1,0 +1,26 @@
+pipeline {
+ agent any
+ stages {
+ stage('Checkout') {
+ steps {
+ git 'https://github.com/bhanu675/playwright_git.git'
+ }
+ }
+ stage('Install Dependencies') {
+ steps {
+ bat 'npm install'
+// bat 'npm install -D allure-playwright'
+ //bat 'npm install -g allure-commandline --force'
+ }
+ }
+ stage('Run Tests') {
+ steps {
+ bat 'npx playwright install'
+ bat 'npx playwright test'
+// bat 'npm run "%script%"'
+
+} }
+ }
+}
+
+ 

@@ -1,0 +1,36 @@
+package Basic.Basic_01;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.module.jsv.JsonSchemaValidator;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.*;
+public class JsonValidator {
+	@Test
+public void Jsonvalidator() {
+		//Need to add the rest-assured Json Schema validator dependency
+		//Way1
+		RestAssured.baseURI = "https://fakestoreapi.com/products";
+		RequestSpecification reqspec = RestAssured.given();
+		Response res = reqspec.get();
+		res.then()
+		   .statusCode(200)
+		   .body(matchesJsonSchemaInClasspath("FakeApi.json"));
+		System.out.println(res.statusCode());
+		//Way2
+		RestAssured
+		.given()
+		.queryParam("q", "school")
+		.when().get("https://fakestoreapi.com/products")
+		.then()
+		.assertThat()
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("FakeApi.json"));
+}
+	
+}
+

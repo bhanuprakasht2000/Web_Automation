@@ -1,0 +1,13 @@
+package Basic.Basic_01;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class Rest1 {
+public static void main(String[] args) {
+	RestAssured.baseURI="https://fakestoreapi.com/products";
+	RequestSpecification requestspec=RestAssured.given();
+	Response respone=requestspec.get();
+}
+}

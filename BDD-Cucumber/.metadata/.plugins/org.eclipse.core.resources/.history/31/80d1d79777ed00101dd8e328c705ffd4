@@ -1,0 +1,10 @@
+package Cucumber_basic.test1;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.core.backend.CucumberBackendException;
+
+@RunWith(Cucumber.class)
+public class AllRunner {
+
+}

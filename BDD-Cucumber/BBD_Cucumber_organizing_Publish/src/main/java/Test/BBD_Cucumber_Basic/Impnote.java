@@ -1,0 +1,10 @@
+package Test.BBD_Cucumber_Basic;
+
+public class Impnote {
+	public static void main(String[] args) {
+		System.out.println("Publish is used for publishing the cucumber reports into the cloud through URL");
+		System.err.println("publish=true"
+				+"\n==>Run the Runner.class");
+System.out.println("Copy the Url exactly from the output and remove if any other text included meand and paste in the browser to get the report");
+	}
+}

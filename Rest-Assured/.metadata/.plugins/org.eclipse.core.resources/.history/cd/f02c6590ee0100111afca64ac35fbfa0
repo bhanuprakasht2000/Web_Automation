@@ -1,0 +1,114 @@
+package Basic.Basic_01;
+
+import java.io.File;
+import java.util.HashMap;
+
+import org.json.JSONObject;
+import org.testng.annotations.Test;
+
+import Testdata.PojoProductrequest;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+public class Postmethodinrestassured {
+	@Test
+public void addproductusingJSONAsString() {
+	String Jsonrequestbodyasstring="{\"title\": \"Laptop product\",\"price\": 13.9}";	
+	//Way 1
+	RestAssured.baseURI="https://fakestoreapi.com/products";
+	RequestSpecification reqspec=RestAssured.given();
+	reqspec.contentType(ContentType.JSON);
+	reqspec.body(Jsonrequestbodyasstring);
+	Response response=reqspec.post();
+	System.out.println(response.getStatusCode());
+	System.out.println(response.getBody().asPrettyString());
+	//Way2
+	RestAssured.given()
+	.contentType(ContentType.JSON)
+	.body(Jsonrequestbodyasstring)
+	.post("https://fakestoreapi.com/products")
+	.then().log().all();
+}
+	@Test
+	public void addProductusingMap() {
+		//Gson dependency need to be added
+		HashMap<String,String> jsonrequestbodyasmap=new HashMap<>();
+		jsonrequestbodyasmap.put("title", "Laptop");
+		jsonrequestbodyasmap.put("price", "200");
+		//Way1
+		RestAssured.baseURI="https://fakestoreapi.com/products";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.contentType(ContentType.JSON);
+		reqspec.body(jsonrequestbodyasmap);
+		Response response=reqspec.post();
+		System.out.println(response.getStatusCode());
+		System.out.println(response.getBody().asPrettyString());
+		//Way2
+		RestAssured.given().contentType(ContentType.JSON)
+		.body(jsonrequestbodyasmap).when()
+		.post("https://fakestoreapi.com/products")
+		.then()
+		.log().all();
+		
+	}
+	@Test
+	public void addProductUsingJsonObject() {
+		//Add the Json dependency in the pom.xml-->import the Org.json not the others
+		JSONObject jsonrequestbody=new JSONObject();
+		jsonrequestbody.put("title", "Mobile");
+		jsonrequestbody.put("price", "300");
+		//Way1
+		RestAssured.baseURI="https://fakestoreapi.com/products";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.contentType(ContentType.JSON);
+		reqspec.body(jsonrequestbody.toString());//Here we need to send the data as string hence to string method used 
+		//since json obj wont get paused.
+		Response response=reqspec.post();
+		System.out.println(response.getStatusCode());
+		System.out.println(response.getBody().asPrettyString());
+		//Way2
+		RestAssured.given().contentType(ContentType.JSON).body(jsonrequestbody.toString())
+		.when().post("https://fakestoreapi.com/products")
+		.then().log().all();
+	}
+	@Test
+	public void addproductUsingPOJOClass() {
+		//Create one pkg and  class==>testdata and PojoProductrequest
+		PojoProductrequest pojorequestbody=new PojoProductrequest("Bulb", 90);
+		//U may use the setter methods as well
+		//pojorequestbody.setTitle("Bulb");
+		//pojorequestbody.setPrice(90);
+		//Way1
+		RestAssured.baseURI="https://fakestoreapi.com/products";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.contentType(ContentType.JSON);
+		reqspec.body(pojorequestbody);
+		Response response=reqspec.post();
+		System.out.println(response.getStatusCode());
+		System.out.println(response.getBody().asPrettyString());
+		//Way2
+		RestAssured.given().contentType(ContentType.JSON).body(pojorequestbody)
+		.when().post("https://fakestoreapi.com/products")
+		.then().log().all();
+		
+		
+	}
+	@Test
+	public void addproductusingexternalJsonFile() {
+		//Need to create one json file==>Created Product.json file in the same project and given the input data
+		File jsonexternalsource=new File("./Product.json");
+		//Way1
+		RestAssured.baseURI="https://fakestoreapi.com/products";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.contentType(ContentType.JSON);
+		reqspec.body(json);
+		Response response=reqspec.post();
+		System.out.println(response.getStatusCode());
+		System.out.println(response.getBody().asPrettyString());
+		//Way2
+		
+	}
+	
+}
+

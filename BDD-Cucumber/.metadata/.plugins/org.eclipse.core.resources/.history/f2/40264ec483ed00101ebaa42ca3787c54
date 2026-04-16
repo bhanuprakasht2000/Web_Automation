@@ -1,0 +1,8 @@
+package Test.Cucumber_BBD_Basic;
+
+import org.junit.runner.RunWith;
+
+@RunWith(cucumber.class)
+public class Myrunner {
+
+}

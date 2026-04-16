@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-06T16:33:15 IST" name="Default suite" finished-at="2026-02-06T16:33:19 IST" duration-ms="3397">
+    <groups>
+    </groups>
+    <test started-at="2026-02-06T16:33:15 IST" name="Default test" finished-at="2026-02-06T16:33:19 IST" duration-ms="3397">
+      <class name="Basic.Basic_01.Pathparameters">
+        <test-method signature="Quryparameters()[pri:0, instance:Basic.Basic_01.Pathparameters@59662a0b]" started-at="2026-02-06T16:33:15 IST" name="Quryparameters" finished-at="2026-02-06T16:33:19 IST" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quryparameters -->
+      </class> <!-- Basic.Basic_01.Pathparameters -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

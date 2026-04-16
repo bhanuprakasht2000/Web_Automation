@@ -1,0 +1,31 @@
+package Basic.Basic_01;
+
+import org.hamcrest.Matchers;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+public class DigestAuthentication {
+	@Test
+public void Preemptive() {
+		//Way1
+	/*	RestAssured.baseURI="https://postman-echo.com/digest-auth";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.auth().digest("postman","password");
+		Response response=reqspec.get();
+		System.out.println(response.getBody().asPrettyString());
+		JsonPath jsonpath=response.jsonPath();
+		String auth=jsonpath.getString("authenticated");
+		Assert.assertEquals(auth, "true");
+		Assert.assertEquals(response.statusCode(), 200);*/
+		//Way2
+		RestAssured.given().auth().digest("postman", "password")
+		.when().get("https://postman-echo.com/basic-auth").then()
+		.statusCode(200).body("authenticated",Matchers.equalTo(true));
+
+	}
+}
+

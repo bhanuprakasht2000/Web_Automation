@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="SmokeTest">
+    <classes>
+      <class name="Demo.Login">
+      <methods>
+      <include name="loginwithvalidceredentials"></include>
+       <include name="loginwithinvalidceredentials"></include>
+      </methods>
+      </class>
+      
+      
+      <class name="Demo.Register">
+      <methods>
+      <include name="registerwithnodata"></include>
+            <include name="Allfields"></include>
+      </methods>
+      </class>
+     
+      <class name="Demo.Search">
+      <methods>
+      <include name="validsearchproduct"></include>     
+       <include name="Invalidsearchproduct"></include>
+
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

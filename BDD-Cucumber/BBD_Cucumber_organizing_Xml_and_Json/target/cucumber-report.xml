@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.296" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="Login scenarios" name=" - Example #1.1" time="0.026">
+<system-out><![CDATA[
+Given Provide the application Url for logging into the account..............passed
+When User enter the the Valid Username  in the Username box as Bhanu........passed
+And User enters the valid password  in the password box as 12334............passed
+And User clicks on the enter button.........................................passed
+Then User should log into the user account..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login scenarios" name=" - Example #1.2" time="0.004">
+<system-out><![CDATA[
+Given Provide the application Url for logging into the account..............passed
+When User enter the the Valid Username  in the Username box as Anu..........passed
+And User enters the valid password  in the password box as 134..............passed
+And User clicks on the enter button.........................................passed
+Then User should log into the user account..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login scenarios" name=" - Example #1.3" time="0.008">
+<system-out><![CDATA[
+Given Provide the application Url for logging into the account..............passed
+When User enter the the Valid Username  in the Username box as Kani.........passed
+And User enters the valid password  in the password box as 1312.............passed
+And User clicks on the enter button.........................................passed
+Then User should log into the user account..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login scenarios" name="User log in with the Invalid credentials" time="0.003">
+<system-out><![CDATA[
+Given Provide the application Url for logging into the account..............passed
+When User enter the the InValid Username "Abc"in the Username box...........passed
+And User enters the invalid password "1234567" in the password box..........passed
+And User clicks on the enter button.........................................passed
+Then User should not able to log into the user account......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login scenarios" name="User log in with the Invalid username and blank password credentials" time="0.009">
+<system-out><![CDATA[
+Given Provide the application Url for logging into the account..............passed
+When User enter the the InValid Username "Abc"in the Username box...........passed
+And User  dont enters the password  in the password box.....................passed
+And User clicks on the enter button.........................................passed
+Then User should not able to log into the user account......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register to the application" name="Signing into the facebook app website" time="0.003">
+<system-out><![CDATA[
+Given User Should navigate the facebook Url.................................passed
+When User Should provide the firstname "Xyz" and surname "AA"...............passed
+And User should provide the date of bith "15-07-2000"in the DOB column......passed
+And User should select select the any one of the gender"Male" in the gender column.passed
+And User should fill the phone no. or email id"12345678" along with the password "bhanu@123".passed
+And User should click on the Signup button..................................passed
+Then User should succefully created the new account and log in into the Facebook.passed
+]]></system-out>
+</testcase>
+<testcase classname="Register to the application" name="Signing into the facebook app website without providing the email id or phone number and the password" time="0.008">
+<system-out><![CDATA[
+Given User Should navigate the facebook Url.................................passed
+When User Should provide the firstname "Xyz" and surname "AA"...............passed
+And User should provide the date of bith "15-07-2000"in the DOB column......passed
+And User should select select the any one of the gender"Male" in the gender column.passed
+And User should  not filled the phone no. or email id  and  the password....passed
+And User should click on the Signup button..................................passed
+Then User will not get account created the new account and log in into the Facebook.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search functionality" name="Checking the search functionality with the available product" time="0.004">
+<system-out><![CDATA[
+Given Navigate to Application url for performing the search function........passed
+When User provided data as "Redmi" in the search box........................passed
+And User clicks on the enter button.........................................passed
+Then The application will provide the searched data details.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search functionality" name="Checking the search functionality with the non-available product" time="0.004">
+<system-out><![CDATA[
+Given Navigate to Application url for performing the search function........passed
+When User provided data of non available product in the search box..........passed
+And User clicks on the enter button.........................................passed
+Then The application will provide the searched data details as not found....passed
+]]></system-out>
+</testcase>
+</testsuite>

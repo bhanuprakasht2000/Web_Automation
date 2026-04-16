@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test  name="Registertest" parallel="tests" thread-count="3">
+    <classes>
+      
+      <class name="Testserialization.Register"/>
+    </classes>
+  </test> 
+  <test  name="Logintest">
+    <classes>
+      <class name="Testserialization.login"/>
+    </classes>
+  </test> 
+  <test  name="Searchtest">
+    <classes>
+      <class name="Testserialization.Search"/>
+      
+    </classes>
+  </test> 
+</suite> 

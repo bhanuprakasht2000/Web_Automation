@@ -1,0 +1,39 @@
+package Login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+public class Lopginfunction1 {
+	WebDriver driver;
+	@BeforeMethod
+	public void setup() {
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://tutorialsninja.com/demo/");
+		driver.findElement(By.xpath("//span[.='My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+	}
+	@Test(invocationCount = 5)
+	public void loginwithvalidceredentials(){
+		driver.findElement(By.id("input-email")).sendKeys("bhanubpr420@gmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("1234");
+		driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+		//Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+	}
+	
+	@AfterMethod
+	public void teardown() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	
+}

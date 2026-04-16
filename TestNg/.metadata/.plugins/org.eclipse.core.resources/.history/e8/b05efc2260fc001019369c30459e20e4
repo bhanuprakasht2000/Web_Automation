@@ -1,0 +1,38 @@
+package Demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ApachePOITEST {
+	WebDriver driver;
+  @Test(dataProvider="supplier",dataProviderClass=Dataproviderforlogin.class)
+  public void Passwordvalidator(String username, int password) throws InterruptedException {
+ 
+  WebDriverManager.chromedriver().setup();
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("https://tutorialsninja.com/demo/");
+	driver.findElement(By.xpath("//span[.='My Account']")).click();
+	driver.findElement(By.linkText("Login")).click();
+	driver.findElement(By.id("input-email")).sendKeys(username);
+	
+	System.out.println("Project==>Testng_@dataProvider_with the APCHE POI 36");
+	driver.findElement(By.id("input-password")).sendKeys(String.valueOf(password));
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+	Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+
+  
+  }
+ 
+  @AfterMethod
+  public void teardown() {
+	  driver.quit();
+  }
+}

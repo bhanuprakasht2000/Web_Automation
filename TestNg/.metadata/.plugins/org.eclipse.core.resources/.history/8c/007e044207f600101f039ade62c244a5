@@ -1,0 +1,8 @@
+package test1.Testng_Selenium_03;
+
+public class Impnote {
+  public static void main(String[] args) {
+    System.out.println("Remove junit dependency-->Add webdriver,selenium java,logback,testng and add plug in testng for the eclipse");
+    System.out.println("Write code in the src/test/java-->Use the ");
+  }
+}

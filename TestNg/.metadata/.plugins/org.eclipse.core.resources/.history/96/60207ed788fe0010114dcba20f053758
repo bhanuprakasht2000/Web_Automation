@@ -1,0 +1,88 @@
+package Listener;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.junit.rules.TestName;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+
+public class SampleListener implements ITestListener {
+	@Override
+	public void onTestStart(ITestResult result) {
+		String test=result.getName();
+		System.out.println("The test started ==>" +test);
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		String test=result.getName();
+		System.out.println("The test succeded ==>" +test);
+
+		
+	}
+WebDriver driver=null;
+	@Override
+	public void onTestFailure(ITestResult result) {
+		String test=result.getName();
+		System.out.println("The test failed==================>" +test);
+			
+				try {
+					driver=(WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+				} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException
+						| SecurityException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				File srcfile=(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			String destFilepath=System.getProperty("user.dir")+"/Screenshots/"+test+".png";
+			FileUtils.cop
+	
+		} 
+		
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		String test=result.getName();
+		System.out.println("The test skipped ========>" +test);
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		String test=result.getName();
+		System.out.println("The test onTestFailedButWithinSuccessPercentage ==>" +test);
+	}
+	
+
+	@Override
+	public void onTestFailedWithTimeout(ITestResult result) {
+		String test=result.getName();
+		System.out.println("Failed due to  the timeout=======================>"+test);
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		System.err.println("Tests execution started");
+		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		System.err.println("Tests execution completed");
+
+		
+	}
+
+		
+	
+	}
+	
+	
+

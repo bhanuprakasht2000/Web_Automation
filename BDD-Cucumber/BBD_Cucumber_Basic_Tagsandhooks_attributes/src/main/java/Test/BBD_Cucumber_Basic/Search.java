@@ -1,0 +1,32 @@
+package Test.BBD_Cucumber_Basic;
+
+import io.cucumber.java.en.*;
+
+public class Search {
+	@Given("Navigate to Application url for performing the search function")
+	public void navigate_to_application_url_for_performing_the_search_function() {
+		System.err.println("Search log in feature:");
+		System.out.println("User navigated to the Appliction Url");
+	}
+
+	@When("User provided data as {string} in the search box")
+	public void user_provided_data_as_in_the_search_box(String Availableprod) {
+		System.out.println("User entered the available product n ame in the search box " +Availableprod);
+	}
+	@And("User provided data of non available product in the search box")
+	public void user_provided_data_of_non_available_product_in_the_search_box() {
+		System.out.println("User entered the non-available product in the search box");
+	}
+	@Then("The application will provide the searched data details")
+	public void the_application_will_provide_the_searched_data_details() {
+		System.out.println("The application provided the searched data");
+	}
+	@Then("The application will provide the searched data details as not found")
+	public void the_application_will_provide_the_searched_data_details_as_not_found() {
+		System.out.println("The application not provided the searched data and displays as product not found");
+
+	}
+
+
+
+}

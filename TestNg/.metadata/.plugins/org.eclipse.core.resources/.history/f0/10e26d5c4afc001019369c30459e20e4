@@ -1,0 +1,17 @@
+package Demo;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class ApachePOITEST {
+  @Test(dataProvider="supplier")
+  public void Passwordvalidator(String username, String password) {
+  }
+  
+  
+  
+  @DataProvider(name="supplier")
+  public void datasupplier() {
+	  
+  }
+}

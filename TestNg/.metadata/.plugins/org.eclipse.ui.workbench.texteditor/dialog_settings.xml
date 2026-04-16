@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="wish list"/>
+			<item value="//a[.=&apos;wish list&apos;]"/>
+			<item value="alert alert-danger alert-dismissible"/>
+			<item value="input-email"/>
+			<item value="input-password"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="531"/>
+		<item key="DIALOG_Y_ORIGIN" value="280"/>
+	</section>
+</section>

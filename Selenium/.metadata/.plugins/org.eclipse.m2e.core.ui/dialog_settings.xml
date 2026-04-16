@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\XpathBasic_17-1"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\WebScreenshot_11"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Alerts_09"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Navigation_07"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Implicittimeout_13"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\WebDrivermanager_03"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Mavenselenium_02"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Fundamentalsofhtml_04"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\HtmlDrowpdown_07"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Html_05"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\maven"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Selenium\Javamanual_01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="Html.Mouseactions_18"/>
+			<item value="Html.XpathBasic_17_1"/>
+			<item value="Html.Webelementproperties_16"/>
+			<item value="Html.Wegpagecontents_15"/>
+			<item value="Html.Currentpagecontents_15"/>
+			<item value="Html.Browsermaximize_14"/>
+			<item value="Html.Implicittimeout_13"/>
+			<item value="Html.Webpagetimeout_12"/>
+			<item value="Html.Webpagetimeout"/>
+			<item value="Html.Webpagetomeout_12"/>
+			<item value="org."/>
+		</list>
+		<list key="groupId">
+			<item value="Html"/>
+		</list>
+		<list key="artifactId">
+			<item value="Mouseactions_18"/>
+			<item value="XpathBasic_17-1"/>
+			<item value="Webelementproperties_16"/>
+			<item value="Wegpagecontents-15"/>
+			<item value="Currentpagecontents_15"/>
+			<item value="Browsermaximize_14"/>
+			<item value="Implicittimeout_13"/>
+			<item value="Webpagetimeout_12"/>
+			<item value="Webpagetimeout"/>
+			<item value="Webpagetomeout_12"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\Selenium\Selenium_PageFactory_DP"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\Selenium\Selenium_POM_DP"/>
+			<item value="C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\Selenium\Selenium_POM"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

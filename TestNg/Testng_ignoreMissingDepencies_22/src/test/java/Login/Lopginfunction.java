@@ -1,0 +1,50 @@
+package Login;
+
+import java.time.Duration;
+
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Lopginfunction {
+
+	WebDriver driver;//globally declaring the driver
+	//Priority will be overridden by the dependsOnMehtods
+	//Not supposed to delete the main test or use the @ignore tag on it
+	@Ignore
+	@Test(priority = 1)
+	public void loginwithvalidceredentials() {
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://tutorialsninja.com/demo/");
+		driver.findElement(By.xpath("//span[.='My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("bhanubpr420@gmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("1234");
+		driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+		Assert.assertTrue(driver.findElement(By.linkText("AbCD")).isDisplayed());
+	}
+
+	@Test(priority=2,ignoreMissingDependencies=true)
+	public void searchedwishlist(){
+		driver.findElement(By.xpath("//input[@class='form-control input-lg']")).sendKeys("Hp",Keys.ENTER);
+		driver.findElement(By.xpath("//button[@data-original-title='Add to Wish List']")).click();
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement wishelement=	wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("wish list")));
+		wishelement.click();
+		Assert.assertTrue(driver.getTitle().equals("My Wish List"));
+	}
+	@Test(priority=3,dependsOnMethods = {"searchedwishlist"},alwaysRun=true)
+	public void removewishlist() {
+		driver.findElement(By.xpath("//a[@class='btn btn-danger']")).click();
+		Assert.assertTrue((driver.findElement(By.xpath("//div[@id='content']/p")).getText()).equals("Your wish list is empty."));
+		driver.quit();
+	}
+}

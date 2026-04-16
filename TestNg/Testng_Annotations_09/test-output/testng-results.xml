@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="10" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-21T20:20:04 IST" name="Suite" finished-at="2026-01-21T20:20:38 IST" duration-ms="33798">
+    <groups>
+    </groups>
+    <test started-at="2026-01-21T20:20:04 IST" name="Test" finished-at="2026-01-21T20:20:23 IST" duration-ms="18918">
+      <class name="LoginwithAnnotations.Lopginfunction">
+        <test-method is-config="true" signature="beforeT()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:04 IST" name="beforeT" finished-at="2026-01-21T20:20:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeT -->
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:04 IST" name="beforeC" finished-at="2026-01-21T20:20:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:04 IST" name="setup" finished-at="2026-01-21T20:20:09 IST" duration-ms="4785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithvalidceredentials()[pri:1, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:09 IST" name="loginwithvalidceredentials" finished-at="2026-01-21T20:20:10 IST" duration-ms="1408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:10 IST" name="teardown" finished-at="2026-01-21T20:20:10 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:10 IST" name="setup" finished-at="2026-01-21T20:20:14 IST" duration-ms="3322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidceredentials()[pri:2, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:14 IST" name="loginwithinvalidceredentials" finished-at="2026-01-21T20:20:15 IST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:15 IST" name="teardown" finished-at="2026-01-21T20:20:15 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:15 IST" name="setup" finished-at="2026-01-21T20:20:18 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidemailceredentials()[pri:3, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:18 IST" name="loginwithinvalidemailceredentials" finished-at="2026-01-21T20:20:18 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidemailceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:18 IST" name="teardown" finished-at="2026-01-21T20:20:19 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:19 IST" name="setup" finished-at="2026-01-21T20:20:21 IST" duration-ms="2814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidpasswordceredentials()[pri:4, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:21 IST" name="loginwithinvalidpasswordceredentials" finished-at="2026-01-21T20:20:22 IST" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidpasswordceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:22 IST" name="teardown" finished-at="2026-01-21T20:20:23 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterC()[pri:0, instance:LoginwithAnnotations.Lopginfunction@355ce81c]" started-at="2026-01-21T20:20:23 IST" name="afterC" finished-at="2026-01-21T20:20:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterC -->
+      </class> <!-- LoginwithAnnotations.Lopginfunction -->
+    </test> <!-- Test -->
+    <test started-at="2026-01-21T20:20:23 IST" name="Test1" finished-at="2026-01-21T20:20:38 IST" duration-ms="14851">
+      <class name="LoginwithAnnotations.Lopginfunction">
+        <test-method is-config="true" signature="beforeS()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:04 IST" name="beforeS" finished-at="2026-01-21T20:20:04 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeS -->
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:23 IST" name="beforeC" finished-at="2026-01-21T20:20:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method is-config="true" signature="beforeT()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:23 IST" name="beforeT" finished-at="2026-01-21T20:20:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeT -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:23 IST" name="setup" finished-at="2026-01-21T20:20:26 IST" duration-ms="2902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidceredentials()[pri:2, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:26 IST" name="loginwithinvalidceredentials" finished-at="2026-01-21T20:20:26 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:26 IST" name="teardown" finished-at="2026-01-21T20:20:26 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:26 IST" name="setup" finished-at="2026-01-21T20:20:29 IST" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidemailceredentials()[pri:3, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:29 IST" name="loginwithinvalidemailceredentials" finished-at="2026-01-21T20:20:29 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidemailceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:29 IST" name="teardown" finished-at="2026-01-21T20:20:30 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:30 IST" name="setup" finished-at="2026-01-21T20:20:32 IST" duration-ms="2763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithinvalidpasswordceredentials()[pri:4, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:32 IST" name="loginwithinvalidpasswordceredentials" finished-at="2026-01-21T20:20:33 IST" duration-ms="421" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Warning: No match for E-Mail Address and/or Password.']"}
+  (Session info: chrome=144.0.7559.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac6b174e9649fb96141f844412e69a50, findElement {using=xpath, value=//div[.='Warning: No match for E-Mail Address and/or Password.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.60, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\BHANUP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59619}, goog:processID: 1692, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59619/devtoo..., se:cdpVersion: 144.0.7559.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac6b174e9649fb96141f844412e69a50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Warning: No match for E-Mail Address and/or Password.']"}
+  (Session info: chrome=144.0.7559.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac6b174e9649fb96141f844412e69a50, findElement {using=xpath, value=//div[.='Warning: No match for E-Mail Address and/or Password.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.60, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\BHANUP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59619}, goog:processID: 1692, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59619/devtoo..., se:cdpVersion: 144.0.7559.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac6b174e9649fb96141f844412e69a50
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at LoginwithAnnotations.Lopginfunction.loginwithinvalidpasswordceredentials(Lopginfunction.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidpasswordceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:33 IST" name="teardown" finished-at="2026-01-21T20:20:33 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:33 IST" name="setup" finished-at="2026-01-21T20:20:36 IST" duration-ms="2961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginwithnoceredentials()[pri:5, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:36 IST" name="loginwithnoceredentials" finished-at="2026-01-21T20:20:37 IST" duration-ms="1161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithnoceredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:37 IST" name="teardown" finished-at="2026-01-21T20:20:38 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterC()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:38 IST" name="afterC" finished-at="2026-01-21T20:20:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterC -->
+        <test-method is-config="true" signature="afterS()[pri:0, instance:LoginwithAnnotations.Lopginfunction@1b6e1eff]" started-at="2026-01-21T20:20:38 IST" name="afterS" finished-at="2026-01-21T20:20:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterS -->
+      </class> <!-- LoginwithAnnotations.Lopginfunction -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

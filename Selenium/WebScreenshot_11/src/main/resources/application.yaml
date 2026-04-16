@@ -1,0 +1,7 @@
+application:
+  name: WebScreenshot_11
+  package: Html.WebScreenshot_11
+spring:
+  application:
+    name: ${application.name}
+

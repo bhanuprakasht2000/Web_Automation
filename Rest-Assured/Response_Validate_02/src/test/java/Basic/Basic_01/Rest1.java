@@ -1,0 +1,23 @@
+package Basic.Basic_01;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import junit.framework.Assert;
+public class Rest1 {
+	@Test
+public void Statusvalidator() {
+	//Way1
+	RestAssured.baseURI="https://fakestoreapi.com/products";
+	RequestSpecification reqspec=RestAssured.given();
+	Response res=reqspec.get();
+	int statuscode=res.getStatusCode();
+	Assert.assertEquals(statuscode, 200);
+	//Way2
+	RestAssured.given().when().get("https://fakestoreapi.com/products").then().statusCode(400);
+	
+}
+}
+

@@ -1,0 +1,14 @@
+package Test.BBD_Cucumber_Basic;
+
+public class Impnote {
+	public static void main(String[] args) {
+		System.out.println("DryRun is used for ensuring each and every step definition implemented or not");
+		System.out.println("DryRun is false by default==>Which provides step followed by the pretty definition as the output");
+		System.out.println("When DryRun is enabled as true then==>Which provides steps all with the  pretty definition as the output");
+System.out.println("Use dryrun as false and true to identify the difference");
+
+		System.err.println("dryRun=true"
+				+"==>Run the Runner.class");
+		
+	}
+}

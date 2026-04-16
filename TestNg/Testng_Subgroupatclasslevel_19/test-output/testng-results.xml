@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-23T20:41:55 IST" name="Suite" finished-at="2026-01-23T20:41:55 IST" duration-ms="78">
+    <groups>
+      <group name="Ios.Sanity">
+        <method signature="Login.loginwithpasswordonly()[pri:3, instance:Demo.Login@3e694b3f]" name="loginwithpasswordonly" class="Demo.Login"/>
+      </group> <!-- Ios.Sanity -->
+      <group name="All">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@3e694b3f]" name="loginwithvalidceredentials" class="Demo.Login"/>
+        <method signature="Login.loginwithvalidusernameonly()[pri:2, instance:Demo.Login@3e694b3f]" name="loginwithvalidusernameonly" class="Demo.Login"/>
+        <method signature="Login.loginwithpasswordonly()[pri:3, instance:Demo.Login@3e694b3f]" name="loginwithpasswordonly" class="Demo.Login"/>
+      </group> <!-- All -->
+      <group name="Windows.Smoke">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@3e694b3f]" name="loginwithvalidceredentials" class="Demo.Login"/>
+      </group> <!-- Windows.Smoke -->
+      <group name="Windows.Sanity">
+        <method signature="Login.loginwithvalidusernameonly()[pri:2, instance:Demo.Login@3e694b3f]" name="loginwithvalidusernameonly" class="Demo.Login"/>
+      </group> <!-- Windows.Sanity -->
+      <group name="Login">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@3e694b3f]" name="loginwithvalidceredentials" class="Demo.Login"/>
+        <method signature="Login.loginwithvalidusernameonly()[pri:2, instance:Demo.Login@3e694b3f]" name="loginwithvalidusernameonly" class="Demo.Login"/>
+        <method signature="Login.loginwithpasswordonly()[pri:3, instance:Demo.Login@3e694b3f]" name="loginwithpasswordonly" class="Demo.Login"/>
+      </group> <!-- Login -->
+    </groups>
+    <test started-at="2026-01-23T20:41:55 IST" name="Test" finished-at="2026-01-23T20:41:55 IST" duration-ms="78">
+      <class name="Demo.Login">
+        <test-method signature="loginwithvalidceredentials()[pri:1, instance:Demo.Login@3e694b3f]" started-at="2026-01-23T20:41:55 IST" name="loginwithvalidceredentials" finished-at="2026-01-23T20:41:55 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidceredentials -->
+        <test-method signature="loginwithvalidusernameonly()[pri:2, instance:Demo.Login@3e694b3f]" started-at="2026-01-23T20:41:55 IST" name="loginwithvalidusernameonly" finished-at="2026-01-23T20:41:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidusernameonly -->
+        <test-method signature="loginwithpasswordonly()[pri:3, instance:Demo.Login@3e694b3f]" started-at="2026-01-23T20:41:55 IST" name="loginwithpasswordonly" finished-at="2026-01-23T20:41:55 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithpasswordonly -->
+      </class> <!-- Demo.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

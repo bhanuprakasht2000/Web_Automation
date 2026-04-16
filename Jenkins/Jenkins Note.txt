@@ -1,0 +1,59 @@
+Jenkins===>
+1>download Jenkins.war file and java jdk17
+2>open the cmd from the war location(Kaveri tech/Jenkins/Jenkins.war) and us the cmd==> java -jar jenkins.war
+3>Jenkin starts running at the default port 8080 and pen inn the browser
+4>create a freestyle project then run the same
+Jenkins CLI==>Use for running the jo form the md
+1>Download the cli from the http://localhost:8080/cli
+2>open the cmd from the cli location, Use the cmd java -jar jenkins-cli.jar -s http://localhost:8080/ help 
+3>Perform actions by setting then security authorization as anyone can do anything in  the Jenkins page
+4>for running the job use this cmd in the cmd java -jar jenkins-cli.jar -s http://localhost:8080/ build Test
+5>For more info watch Jenkins in the step by step automation in the you tube channel or Selenium java tarining-session25-Maven commands and Jenkins in QA fox
+===================================================================================
+Maven execution:
+=================
+1>project Testclass should be saved with the Test name at the prefix or suffix to run by the maven ex:TestRunner.java(C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\BBD cucumber\BBD_Cucumber_Maventest)
+2>first need to install the maven by add the maven surefire plugin
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.22.0</version>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.maven.surefire</groupId>
+					<artifactId>surefire-junit4</artifactId>
+					<version>2.22.0</version>
+				</dependency>
+			</dependencies>
+			<configuration>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+3>Navigate the pom.xml file location of the project==>C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\BBD cucumber\BBD_Cucumber_Maventest
+4>open the cmd from there and run the commands==>1>mvn test==>This will execute the tests
+Jenkins with selenium:
+=====================
+Note:
+=====
+for running the maven in Jenkins first Jenkins runs should be applicable
+1>Run the Jenkins in 8080 local host by using the above lines
+2>Navigate to the manage Jenkins/tools
+3>Add jdk path as by copying the jdk location from the c drive and place it in the java_home
+4>Give the name as per your wish
+5>Click on maven installations and Allow to download it automatically from the apache
+6>Create a ne job with maven name and in the configuration general click on the advanced button==>select use custom workspace button and add the path of project(C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\BBD cucumber\BBD_Cucumber_Maventest)
+7>Scroll down and click on  builds-->Add build steps-->select  Invoke top-level Maven targets-->Maven home(previous maven installation used one)
+8>In the goals of build give the command as test(test)-->apply and save
+9>open the general projects tab and click on the build-->You will get the #1 build -->click on it -->open the console output to see the results-->2tests executed
+10>For generating the reports we need to install the testing plugin
+------------------------------------------------------------------
+a>goto the manage jenkins-->plugins-->available plugins--> search and install testing
+b>Once installation success build the maven pipeline again
+c>Go back to the project pipeline-->click on configure-->Post build actions-->click on Add build step-->select  Publish TestNG Results-->the name will get automatically dont modify it-->apply and save it
+d>build the project again and check the changes on refreshing(my Jenkins not supporting here since plugin not working--to show the testing reports)

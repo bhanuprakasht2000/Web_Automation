@@ -1,0 +1,23 @@
+package Login;
+
+import org.testng.annotations.Test;
+
+public class Register {
+  @Test(priority=1,groups= {"Smoke","All","Register"})
+  public void Mandatoryfields() {
+	  System.out.println("Mandatoryfields--Register");
+  }
+  @Test(priority=2,groups= {"Smoke","All","Register"})
+  public void Allfields() {
+	  System.out.println("Allfields--Register");
+  }
+  @Test(priority=3,groups= {"Sanity","All","Register"})
+  public void Registerwithputchckbox() {
+	  System.out.println("Registerwithputchckbox--Register");
+  }
+  @Test(priority=4,groups= {"Regression","All","Register"})
+  public void registerwithnodata() {
+	  System.out.println("registerwitoutchceckbox--Register");
+  }
+ 
+}

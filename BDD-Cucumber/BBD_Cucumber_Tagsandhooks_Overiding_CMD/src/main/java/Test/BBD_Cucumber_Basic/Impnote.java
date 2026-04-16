@@ -1,0 +1,12 @@
+package Test.BBD_Cucumber_Basic;
+
+public class Impnote {
+	public static void main(String[] args) {
+		System.err.println("Download the Maven zip file from the google and keep in perticular location,here i kept at /BBD_Cucumber_Tagsandhooks_Overiding_CMD/apache-maven-3.9.12 ");
+		System.out.println("Set up the environmet variables by searching the edit sysytem and envronment variables");
+		System.out.println("For overriding the existing tags in the open the cmd at the project location==>C:\\Users\\Bhanuprakash Reddy\\Desktop\\Kaveri tech\\BBD cucumber\\BBD_Cucumber_Tagsandhooks_Overiding_CMD> ");
+		System.out.println("Use the cmd as ==>mvn test==>For running the existing or declared tags in the eclipse");
+		System.out.println("Use the cmd as ==>mvn test -Dcucumber.filter.tags=\"@Login\"==>For running the overriding the declared tags in the eclipse");
+
+	}
+}

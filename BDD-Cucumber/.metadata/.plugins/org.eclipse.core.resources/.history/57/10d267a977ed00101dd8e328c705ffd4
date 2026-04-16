@@ -1,0 +1,64 @@
+package Cucumber_basic.test1;
+
+import io.cucumber.java.en.*;
+
+public class Login  {
+
+	@Given("Provide the application Url for logging into the account")
+	public void provide_the_application_url_for_logging_into_the_account() {
+		System.err.println("Background gherkin word is used for the taking the commanly used Given or When or Then");
+		System.err.println("The Log in scenario");
+		System.out.println("The User have the Url into the application");
+
+	}
+
+	@When("User enter the the Valid Username \"Bhanu\"in the Username box")
+	public void user_enter_the_the_valid_username_bhanu_in_the_username_box() {
+		System.out.println("The User entered the valid username  into the application");
+	}
+
+	@And("User enters the valid password {string} in the password box")
+	public void user_enters_the_valid_password_in_the_password_box(String validpassword) {
+		System.out.println("The User entered Valid password for the application");
+	}
+
+	@And("User clicks on the enter button")
+	public void user_clicks_on_the_enter_button() {
+		System.out.println("The User clicks on the enter button the application");
+	}
+
+	@Then("User should log into the user account")
+	public void user_should_log_into_the_user_account() {
+		   System.out.println("The User logged into the application");
+
+	}
+	//2nd scenario
+	
+
+	@When("User enter the the InValid Username \"Abc\"in the Username box")
+	public void user_enter_the_the_in_valid_username_abc_in_the_username_box() {
+		System.out.println("The User entered the invalid username into the application");
+
+	}
+
+	@And("User enters the invalid password {string} in the password box")
+	public void user_enters_the_invalid_password_in_the_password_box(String Invalidpassword) {
+		System.out.println("The User entered the invalid password into the application");
+
+		
+	}
+
+	@And("User  dont enters the password  in the password box")
+	public void user_dont_enters_the_password_in_the_password_box() {
+	    System.out.println("User not entered the password in the password column box");
+	}
+
+	@Then("User should not able to log into the user account")
+	public void user_should_not_able_to_log_into_the_user_account() {
+		   System.out.println("The User not logged into the application");
+}
+
+
+
+
+}

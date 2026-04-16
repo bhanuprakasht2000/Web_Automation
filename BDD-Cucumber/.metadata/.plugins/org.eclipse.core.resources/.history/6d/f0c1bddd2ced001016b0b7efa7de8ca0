@@ -1,0 +1,16 @@
+Feature:Login scenarios
+We are going to test the log in functionalities
+
+Scenario: User log in with the Valid credentials
+Given Provide the application Url for logging into the account
+When User enter the the Valid Username "Bhanu"in the Username box
+And User enters the valid password "1234" in the password box
+And User clicks on the enter button
+Then User should log into the user account
+
+Scenario: User log in with the Invalid credentials
+Given Provide the application Url for logging into the account
+When User enter the the InValid Username "Abc"in the Username box
+And User enters the invalid password "1234567" in the password box
+And User clicks on the enter button
+Then User should not able to log into the user account

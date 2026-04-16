@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Demo&apos; to &apos;Testng_ITestListeners_AtSuiteLevel_49/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;Testng_Groupbyattribute_16&apos;&#x0D;&#x0A;- Destination element: &apos;Testng_ITestListeners_AtSuiteLevel_49/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;Testng_Groupbyattribute_16/src/test/java/Demo&apos;" description="Copy package" destination="=Testng_ITestListeners_AtSuiteLevel_49/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;Demo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1769774423240" version="1.0"/>
+</session>

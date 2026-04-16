@@ -1,0 +1,27 @@
+package Demo;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class OnedimObjectArray {
+
+    @Test(priority = 1, dataProvider = "cred")
+    public void general(Object usermail, Object password) {
+        System.out.println(usermail + " | " + password);
+    }
+
+    @DataProvider(name = "cred")
+    public Object[] dataset() {
+
+    	Object[] data = {{"1dim-ObjArrray-1",
+				"1dim-ObjArrray-3",
+				"1dim-ObjArrray-5"}};
+
+
+        return data;
+    }
+}

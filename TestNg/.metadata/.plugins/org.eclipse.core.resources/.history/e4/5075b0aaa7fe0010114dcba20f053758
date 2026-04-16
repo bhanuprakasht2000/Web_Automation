@@ -1,0 +1,33 @@
+package test1.Testng_Selenium_03;
+
+public class Impnote {
+  public static void main(String[] args) {
+    System.out.println("Remove junit dependency-->Add webdriver,selenium java,logback,testng and add plug in testng for the eclipse");
+    System.out.println("Delete the defaultb package came with the project in the src/test/java-->create a new testng class");
+    System.out.println("asserttrue()method is used from Asset class in the testng-->defines the true or false for declaring pass or fail of test");
+    System.out.println("===================================================================================");
+   System.out.println("I have created a class of RetryAnanlyser.java which defines how many times the Retry analyser has to work ");
+   System.out.println("we have declare the   @Test(priority = 2,retryAnalyzer = Retryfailedtests.RetryAnanlyser.class)\r\n"
+   		+ "Is the testcase passes then the retry will not occur"+
+		   "If the testcase fails its retrys for the limited number");
+   System.out.println("In the Login.java class the loginwithvalidceredentials()->Passed hence its retry not executed");
+   System.out.println("In the Login.java class the loginwithInvalidcredentials()->failed hence its retry executing for 3 times=>1 general and 2 retries");
+    System.out.println("Program need to be executed from the Testng.xml-->run Suite");
+    System.out.println("\r\n"
+       		+ "public class RetryAnanlyser implements IRetryAnalyzer {\r\n"
+       		+ "	static int count;\r\n"
+       		+ "	static int endpoint = 2;\r\n"
+       		+ "	\r\n"
+       		+ "	public boolean retry(ITestResult result) {\r\n"
+       		+ "	\r\n"
+       		+ "		if(count<endpoint) {\r\n"
+       		+ "			count++;\r\n"
+       		+ "			return true;\r\n"
+       		+ "		}\r\n"
+       		+ "		return false;\r\n"
+       		+ "	}\r\n"
+       		+ "\r\n"
+       		+ "}");
+    
+   }
+}

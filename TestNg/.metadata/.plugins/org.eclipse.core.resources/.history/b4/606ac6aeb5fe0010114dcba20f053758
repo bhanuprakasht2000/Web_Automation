@@ -1,0 +1,21 @@
+package test1.Testng_Selenium_03;
+
+public class Impnote {
+  public static void main(String[] args) {
+    System.out.println("Remove junit dependency-->Add webdriver,selenium java,logback,testng and add plug in testng for the eclipse");
+    System.out.println("Delete the defaultb package came with the project in the src/test/java-->create a new testng class");
+    System.out.println("asserttrue()method is used from Asset class in the testng-->defines the true or false for declaring pass or fail of test");
+    System.out.println("===================================================================================");
+   System.out.println("verbose attribute can help you- it is used to define the amount of logging to be performed on the console."+ 
+    "The verbosity level is 0 to 10, where 10 is most detailed.");
+   System.out.println("Note* You can specify -1 and this will put TestNG in debug mode. The default level is 0.");
+   System.out.println("<suite name=\"Suite\" verbose=\"4\">==>Verbose is applied at the suite level in the testng.xml");
+   System.out.println("We have run the project from the testng.xml file =>Run as suite");
+   System.out.println("On running you will receive the extra informatyion on the console  "+
+   "...\r\n"
+   + "... TestNG 7.11.0 by Cédric Beust (cedric@beust.com)\r\n"
+   + "...\r\n"
+   + "");
+   
+  }
+}

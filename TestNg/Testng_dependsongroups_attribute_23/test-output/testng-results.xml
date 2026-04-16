@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-25T10:37:56 IST" name="Default suite" finished-at="2026-01-25T10:37:56 IST" duration-ms="97">
+    <groups>
+      <group name="Sanity">
+        <method signature="Lopginfunction.loginwithinvalidusernameandvalidpassword()[pri:2, instance:Login.Lopginfunction@235834f2]" name="loginwithinvalidusernameandvalidpassword" class="Login.Lopginfunction"/>
+        <method signature="Lopginfunction.loginwithvalidusernameandinvalidpassword()[pri:2, instance:Login.Lopginfunction@235834f2]" name="loginwithvalidusernameandinvalidpassword" class="Login.Lopginfunction"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Lopginfunction.loginwithoutcredentials()[pri:3, instance:Login.Lopginfunction@235834f2]" name="loginwithoutcredentials" class="Login.Lopginfunction"/>
+      </group> <!-- Regression -->
+      <group name="Login">
+        <method signature="Lopginfunction.loginwithmouseactions()[pri:3, instance:Login.Lopginfunction@235834f2]" name="loginwithmouseactions" class="Login.Lopginfunction"/>
+      </group> <!-- Login -->
+      <group name="Smoke">
+        <method signature="Lopginfunction.loginwithinvalidceredentials()[pri:1, instance:Login.Lopginfunction@235834f2]" name="loginwithinvalidceredentials" class="Login.Lopginfunction"/>
+        <method signature="Lopginfunction.loginwithvalidceredentials()[pri:1, instance:Login.Lopginfunction@235834f2]" name="loginwithvalidceredentials" class="Login.Lopginfunction"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-01-25T10:37:56 IST" name="Default test" finished-at="2026-01-25T10:37:56 IST" duration-ms="97">
+      <class name="Login.Lopginfunction">
+        <test-method signature="loginwithinvalidceredentials()[pri:1, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithinvalidceredentials" finished-at="2026-01-25T10:37:56 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidceredentials -->
+        <test-method signature="loginwithvalidceredentials()[pri:1, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithvalidceredentials" finished-at="2026-01-25T10:37:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidceredentials -->
+        <test-method signature="loginwithinvalidusernameandvalidpassword()[pri:2, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithinvalidusernameandvalidpassword" finished-at="2026-01-25T10:37:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidusernameandvalidpassword -->
+        <test-method signature="loginwithvalidusernameandinvalidpassword()[pri:2, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithvalidusernameandinvalidpassword" depends-on-groups="Smoke" finished-at="2026-01-25T10:37:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidusernameandinvalidpassword -->
+        <test-method signature="loginwithoutcredentials()[pri:3, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithoutcredentials" depends-on-groups="Sanity" finished-at="2026-01-25T10:37:56 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithoutcredentials -->
+        <test-method signature="loginwithmouseactions()[pri:3, instance:Login.Lopginfunction@235834f2]" started-at="2026-01-25T10:37:56 IST" name="loginwithmouseactions" depends-on-groups="Regression" finished-at="2026-01-25T10:37:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithmouseactions -->
+      </class> <!-- Login.Lopginfunction -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

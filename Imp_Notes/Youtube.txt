@@ -1,0 +1,20 @@
+1>Postman-->Step by step automation
+2>Jenkins-->Step by step automation
+3>Xpath and selenium-->Hyr tutorials
+4>SoapUi-->Qa fox
+5>Agile and jira-->Sdet qa
+6>Git/github-->Sdet Qa
+7>bdd cucumber-->Qa fox
+8>TestNg-->QA fox
+9>Pom and Pf with selenium-->Qa fox
+10>Rest assured-->Krishna Sakinala
+11>Palywright with the typescript --->SDET
+
+
+
+
+
+https://www.youtube.com/watch?v=tpANSHdrwp8&list=PLUeDIlio4THHcYKlAROqnq539Ls4eR07J - spectflow 
+https://www.youtube.com/watch?v=c06ao_jf6R4&list=PL6tu16kXT9PpqWrAYzhnlulMTKU2aP58P&index=7 - reqnroll
+
+https://automationexercise.com/api_list  -- api testing practice

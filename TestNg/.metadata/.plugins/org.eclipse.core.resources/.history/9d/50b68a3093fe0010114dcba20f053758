@@ -1,0 +1,39 @@
+package Base;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+public class Screenshot {
+	public void SCcapture() {
+		
+	try {
+		driver=(WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+	} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException
+			| SecurityException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	File srcfile=(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+String destFilepath=System.getProperty("user.dir")+"/Screenshots/"+test+datereturn()+".png";
+try {
+	FileUtils.copyFile(srcfile,new File(destFilepath));
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	
+} 
+public String datereturn() {
+	Date date=new Date();
+	String d=date.toString().replace(" ", "_").replace(":", "_");
+	return d;
+	
+}
+
+}

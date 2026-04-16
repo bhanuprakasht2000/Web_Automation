@@ -1,0 +1,24 @@
+package Demo;
+
+
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class OnedimObjectArray {
+
+    @Test(priority = 1, dataProvider = "cred")
+    public void general(Object usermail) {
+        System.out.println(usermail );
+    }
+
+    @DataProvider(name = "cred")
+    public Object[] dataset() {
+
+    	Object[] data = {"1dim-ObjArrray-1",
+				"1dim-ObjArrray-3",
+				"1dim-ObjArrray-5"};
+
+        return data;
+    }
+}

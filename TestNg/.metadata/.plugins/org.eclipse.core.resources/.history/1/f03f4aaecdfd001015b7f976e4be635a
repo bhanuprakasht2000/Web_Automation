@@ -1,0 +1,16 @@
+package test1.Testng_Selenium_03;
+
+public class Impnote {
+  public static void main(String[] args) {
+    System.out.println("Remove junit dependency-->Add webdriver,selenium java,logback,testng and add plug in testng for the eclipse");
+    System.out.println("Delete the defaultb package came with the project in the src/test/java-->create a new testng class");
+    System.out.println("asserttrue()method is used from Asset class in the testng-->defines the true or false for declaring pass or fail of test");
+    System.out.println("===================================================================================");
+    System.out.println("The Listeners are used for the listening the events to the that happens in the testing methods such as failed,succeded,skipped etc.,");
+    System.out.println("In the the listeners are ITestListener,ISuiteListener,IReporter,IClassListener,IConfigurable,IDataProviderListener etc.,");
+    System.out.println("Create a new class with the class name SampleListener which extends the Listener interface"+
+    "This interface contails the default methods which means the overriding is not neccessary");
+    
+    
+   }
+}

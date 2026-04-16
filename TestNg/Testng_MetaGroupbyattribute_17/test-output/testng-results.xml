@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="15" total="22" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-23T11:44:07 IST" name="Suite" finished-at="2026-01-23T11:44:07 IST" duration-ms="194">
+    <groups>
+      <group name="All">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@515c6049]" name="loginwithvalidceredentials" class="Demo.Login"/>
+        <method signature="Register.Mandatoryfields()[pri:1, instance:Demo.Register@30c15d8b]" name="Mandatoryfields" class="Demo.Register"/>
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@5e0e82ae]" name="validsearchproduct" class="Demo.Search"/>
+        <method signature="Register.Allfields()[pri:2, instance:Demo.Register@30c15d8b]" name="Allfields" class="Demo.Register"/>
+        <method signature="Search.Invalidsearchproduct()[pri:2, instance:Demo.Search@5e0e82ae]" name="Invalidsearchproduct" class="Demo.Search"/>
+        <method signature="Login.loginwithinvalidceredentials()[pri:5, instance:Demo.Login@515c6049]" name="loginwithinvalidceredentials" class="Demo.Login"/>
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@247bddad]" name="validsearchproduct" class="Demo.Search"/>
+      </group> <!-- All -->
+      <group name="Register">
+        <method signature="Register.Mandatoryfields()[pri:1, instance:Demo.Register@30c15d8b]" name="Mandatoryfields" class="Demo.Register"/>
+        <method signature="Register.Allfields()[pri:2, instance:Demo.Register@30c15d8b]" name="Allfields" class="Demo.Register"/>
+        <method signature="Search.Invalidsearchproduct()[pri:2, instance:Demo.Search@5e0e82ae]" name="Invalidsearchproduct" class="Demo.Search"/>
+      </group> <!-- Register -->
+      <group name="Search">
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@5e0e82ae]" name="validsearchproduct" class="Demo.Search"/>
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@247bddad]" name="validsearchproduct" class="Demo.Search"/>
+      </group> <!-- Search -->
+      <group name="Login">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@515c6049]" name="loginwithvalidceredentials" class="Demo.Login"/>
+        <method signature="Login.loginwithinvalidceredentials()[pri:5, instance:Demo.Login@515c6049]" name="loginwithinvalidceredentials" class="Demo.Login"/>
+      </group> <!-- Login -->
+      <group name="Smoke">
+        <method signature="Login.loginwithvalidceredentials()[pri:1, instance:Demo.Login@515c6049]" name="loginwithvalidceredentials" class="Demo.Login"/>
+        <method signature="Register.Mandatoryfields()[pri:1, instance:Demo.Register@30c15d8b]" name="Mandatoryfields" class="Demo.Register"/>
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@5e0e82ae]" name="validsearchproduct" class="Demo.Search"/>
+        <method signature="Register.Allfields()[pri:2, instance:Demo.Register@30c15d8b]" name="Allfields" class="Demo.Register"/>
+        <method signature="Search.Invalidsearchproduct()[pri:2, instance:Demo.Search@5e0e82ae]" name="Invalidsearchproduct" class="Demo.Search"/>
+        <method signature="Login.loginwithinvalidceredentials()[pri:5, instance:Demo.Login@515c6049]" name="loginwithinvalidceredentials" class="Demo.Login"/>
+        <method signature="Search.validsearchproduct()[pri:1, instance:Demo.Search@247bddad]" name="validsearchproduct" class="Demo.Search"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-01-23T11:44:07 IST" name="Test1" finished-at="2026-01-23T11:44:07 IST" duration-ms="108">
+      <class name="Demo.Register">
+        <test-method signature="Mandatoryfields()[pri:1, instance:Demo.Register@30c15d8b]" started-at="2026-01-23T11:44:07 IST" name="Mandatoryfields" finished-at="2026-01-23T11:44:07 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mandatoryfields -->
+        <test-method signature="Allfields()[pri:2, instance:Demo.Register@30c15d8b]" started-at="2026-01-23T11:44:07 IST" name="Allfields" finished-at="2026-01-23T11:44:07 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Allfields -->
+      </class> <!-- Demo.Register -->
+      <class name="Demo.Login">
+        <test-method signature="loginwithvalidceredentials()[pri:1, instance:Demo.Login@515c6049]" started-at="2026-01-23T11:44:07 IST" name="loginwithvalidceredentials" finished-at="2026-01-23T11:44:07 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithvalidceredentials -->
+        <test-method signature="loginwithinvalidceredentials()[pri:5, instance:Demo.Login@515c6049]" started-at="2026-01-23T11:44:07 IST" name="loginwithinvalidceredentials" finished-at="2026-01-23T11:44:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithinvalidceredentials -->
+      </class> <!-- Demo.Login -->
+      <class name="Demo.Search">
+        <test-method signature="validsearchproduct()[pri:1, instance:Demo.Search@5e0e82ae]" started-at="2026-01-23T11:44:07 IST" name="validsearchproduct" finished-at="2026-01-23T11:44:07 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validsearchproduct -->
+        <test-method signature="Invalidsearchproduct()[pri:2, instance:Demo.Search@5e0e82ae]" started-at="2026-01-23T11:44:07 IST" name="Invalidsearchproduct" finished-at="2026-01-23T11:44:07 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalidsearchproduct -->
+      </class> <!-- Demo.Search -->
+    </test> <!-- Test1 -->
+    <test started-at="2026-01-23T11:44:07 IST" name="Test2" finished-at="2026-01-23T11:44:07 IST" duration-ms="6">
+      <class name="Demo.Search">
+        <test-method signature="validsearchproduct()[pri:1, instance:Demo.Search@247bddad]" started-at="2026-01-23T11:44:07 IST" name="validsearchproduct" finished-at="2026-01-23T11:44:07 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validsearchproduct -->
+      </class> <!-- Demo.Search -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

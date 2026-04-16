@@ -1,0 +1,32 @@
+package Basic.Basic_01;
+
+import org.json.JSONObject;
+import org.testng.annotations.Test;
+
+
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class Deletemethodinrestassured {
+	@Test
+public void deletemethodexample() {
+		
+		//Way1
+		RestAssured.baseURI="https://fakestoreapi.com/products";
+		RequestSpecification reqspec=RestAssured.given();
+		reqspec.contentType(ContentType.JSON);
+		Response response=reqspec.delete("/20");
+		System.out.println(response.getStatusCode());
+		System.out.println(response.body().asPrettyString());
+		//Way2
+		RestAssured.given().contentType(ContentType.JSON)
+		.baseUri("https://fakestoreapi.com/products")
+		.when().delete("/20")
+		.then().statusCode(200).log().all();
+}
+	
+}
+

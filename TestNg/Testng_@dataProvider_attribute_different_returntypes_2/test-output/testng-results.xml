@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-27T22:37:20 IST" name="Default suite" finished-at="2026-01-27T22:37:20 IST" duration-ms="87">
+    <groups>
+    </groups>
+    <test started-at="2026-01-27T22:37:20 IST" name="Default test" finished-at="2026-01-27T22:37:20 IST" duration-ms="87">
+      <class name="Demo.List_iterator">
+        <test-method signature="Stringmethod(java.lang.Object,java.lang.Object)[pri:1, instance:Demo.List_iterator@33d512c1]" started-at="2026-01-27T22:37:20 IST" name="Stringmethod" data-provider="listdim" finished-at="2026-01-27T22:37:20 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABCD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Stringmethod -->
+        <test-method signature="Stringmethod(java.lang.Object,java.lang.Object)[pri:1, instance:Demo.List_iterator@33d512c1]" started-at="2026-01-27T22:37:20 IST" name="Stringmethod" data-provider="listdim" finished-at="2026-01-27T22:37:20 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XYZ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Stringmethod -->
+        <test-method signature="Stringmethod(java.lang.Object,java.lang.Object)[pri:1, instance:Demo.List_iterator@33d512c1]" started-at="2026-01-27T22:37:20 IST" name="Stringmethod" data-provider="listdim" finished-at="2026-01-27T22:37:20 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WERTT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[56789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Stringmethod -->
+      </class> <!-- Demo.List_iterator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,50 @@
+Imp note:
+Executing the project locally using the path:
+1>Navigate and create free style project with the name Playwright_local
+2>Move to the general-->Advanced-->Use custom workspace-->Directory-->Paste the path of the project(C:\Users\Bhanuprakash Reddy\Desktop\Kaveri tech\Playwright_POM)
+3>Move to the Build Steps-->Execute Windows batch command-->command-->npx playwright test Pom.spec.ts(pom.spec.ts-->name of the file)
+Note:the Allure reports at the post build actions is not working 
+ ex: Playwright_local in the Jenkins
+
+GitHub code pull and execute the project:
+1>Navigate and create free style project with the name Playwright_local
+2>Need to push the project(yml file to be in git-hub\workflows(copy code from the doc)+setup_env below the playwriht.config.ts)into the GitHub ==>Follow the commands as per doc included.
+3>Configuration need to checked like branch and execution commands and other things in the yml file
+==>branches: [master]
+==>runs-on: windows-latest
+==>run: npx playwright test
+4>Copy that url(https://github.com/bhanu675/playwright_git.git) from the GitHub repo and paste in the Jenkins git repository url.
+Note:the Allure reports at the post build actions is not working 
+
+ex: Playwright_git in the Jenkins
+Executing the Project from the GitHub pull request through pipeline:
+1>create a pipeline project-->triggers-->pipelinescript(option)-->use the script in the pipelinewithoutallurescript-->save and build it
+Note:the Allure reports at the post build actions is not working 
+
+==>pipelinewithoutallurescript:
+pipeline {
+ agent any
+ stages {
+ stage('Checkout') {
+ steps {
+ git 'https://github.com/bhanu675/playwright_git.git'
+ }
+ }
+ stage('Install Dependencies') {
+ steps {
+ bat 'npm install'
+// bat 'npm install -D allure-playwright'
+ //bat 'npm install -g allure-commandline --force'
+ }
+ }
+ stage('Run Tests') {
+ steps {
+ bat 'npx playwright install'
+ bat 'npx playwright test'
+// bat 'npm run "%script%"'
+
+} }
+ }
+}
+
+ 

@@ -1,0 +1,26 @@
+package Demo;
+
+
+import java.util.*;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class Listdata {
+
+    @Test(priority = 1, dataProvider = "cred")
+    public void general(Object usermail, Object password) {
+        System.out.println(usermail + " | " + password);
+    }
+
+    @DataProvider(name = "cred")
+    public Iterator<Object[]> dataset() {
+
+        List<Object[]> data = new LinkedList<>();
+
+        data.add(new Object[]{"List-1", "2"});
+        data.add(new Object[]{"List-3", "4"});
+        data.add(new Object[]{"List-5", "6"});
+
+        return data.iterator();
+    }
+}

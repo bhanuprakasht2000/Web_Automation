@@ -1,0 +1,19 @@
+package Retryfailedtests;
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class RetryAnanlyser {
+	int count=0;
+	int endpoint = 3;
+	
+	public boolean retry(ITestResult result) {
+	
+		if(count<endpoint) {
+			count++;
+			return true;
+		}
+		return false;
+	}
+
+}

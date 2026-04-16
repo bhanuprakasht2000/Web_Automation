@@ -1,0 +1,38 @@
+package Demo;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.sun.tools.javac.util.Iterators;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Setdata {
+	
+		@Test(priority = 1,dataProvider="cred")
+		public void general(Object usermail,Object password) {
+			System.out.println();
+			
+		}
+		@DataProvider(name="cred")
+		public Iterator<Object[]> dataset() {
+			Set<Object[]>dataset=new HashSet<>();
+			 dataset.add(new Object[]{"hashset-1", "2"});
+		        dataset.add(new Object[]{"hashset-3", "4"});
+		        dataset.add(new Object[]{"hashset-5", "6"});
+
+			return dataset.iterator();
+	}
+
+		
+		
+}

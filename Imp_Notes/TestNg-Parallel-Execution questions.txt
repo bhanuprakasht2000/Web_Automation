@@ -1,0 +1,54 @@
+
+Testng classes series form the QA fox by the Arun motoori from videos-49 to 56
+Interview questions for the Parallel execution:
+1>Even though Multiple test tags, but only few test tags enabled for the parallel execution, how is it possible?
+	We are creating the parallel="classes" or" methods" thread-count="5" at the test level for which classes  the  parallel run needed to apply and in other test we don't us the concept of parallelization.
+	ex:
+	<test  name="Test1" parallel="classes" thread-count="2">
+    <classes>
+      
+      <class name="Testserialization.Register"/>
+       <class name="Testserialization.login"/>
+    </classes>
+  </test> 
+ 
+  <test  name="Test2">
+    <classes>
+    <class name="Testserialization.Search"/>
+       <class name="Testserialization.Search2"/>
+      
+    </classes>
+  </test> 
+2>What happens when we provide parallel="none" thread-count="2"  in the testing.xml?
+	When we provide the parallel="none"  thread-count="2" at the test level or suite level then the parallelization will not occur 	which means we are running the threads in the sequential order(serialization).
+3>What happens when we provide parallel="false" thread-count="2"  in the testing.xml?
+	When we provide the parallel="false"  thread-count="2" at the test level or suite level then the parallelization will not occur which means we are running the threads in the sequential order(serialization).
+4>What happens when we provide parallel="tests" thread-count="1"  in the testing.xml?
+	When we provide the parallel="tests"  thread-count="1" at the test level or suite level then the parallelization will not occur which means we are running 	the threads in the sequential order(serialization).
+5>What happens when we provide negative number in the thread count(parallel="tests" thread-count="-2")in the testing.xml?
+	The xml file will throw any error but while executing you will get the "IllegalArgumentExecution" will be displayed during run time.
+6>What happens when there is more thread count and less number of tests(parallel="tests" thread-count="200") we have only 5 tests?
+	In this particular scenario the 5threads will run for the existing 5 tests and remaining threads and will be ideal.
+7>What happens when we provide parallel="classes" or parallel="methods" at the suite tag level in the testing.xml?
+	The test tags will be executed in the sequential manner.
+	New Threads will be created for every test tag for parallel execution of classes or methods.
+	ex:In the below examples the Test1 will execute first-->Operates on 2 threads-->1>Register 2>Login-->threads will be destroyed.
+	   After that again 2 threads will be created for running the classes-->1>Search and 2>Search2-->threads will be destroyed.
+	<test  name="Test1" parallel="classes" thread-count="2">
+    	<classes>
+      
+      		<class name="Testserialization.Register"/>
+       		<class name="Testserialization.login"/>
+    	</classes>
+  	</test> 
+ 
+  	<test  name="Test2">
+    	<classes>
+      	<class name="Testserialization.Search"/>
+       	<class name="Testserialization.Search2"/>
+      
+    	</classes>
+  	</test> 
+7>What happens when we provide parallel attribute only but not the thread-count  in the testing.xml file.In this case what will be default thead-count? 
+	5threads(Default thread-count=5) will be runned by defaultly.
+
